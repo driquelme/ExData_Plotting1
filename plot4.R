@@ -24,7 +24,7 @@ doPlot <- function() {
     plot(Time, Sub_metering_1, main="", type="l", ylab="Energy sub metering", xlab="")
     lines(Time, Sub_metering_2, col="red")
     lines(Time, Sub_metering_3, col="blue")
-    legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), pch=20)
+    legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), pch=20, bty = "n")
     plot(Time, Global_reactive_power, type="l", xlab="datetime")
   })
 }
